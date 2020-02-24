@@ -1,4 +1,4 @@
-# [d3-polygon](https://github.com/d3/d3-polygon)-cpp
+# [d3-polygon](https://github.com/d3/d3-polygon) c++
 
 ## TODO
 
