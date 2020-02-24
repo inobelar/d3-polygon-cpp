@@ -1,0 +1,17 @@
+#ifndef D3__POLYGON__CROSS_HPP
+#define D3__POLYGON__CROSS_HPP
+
+namespace d3_polygon {
+
+// Returns the 2D cross product of AB and AC vectors, i.e., the z-component of
+// the 3D cross product in a quadrant I Cartesian coordinate system (+x is
+// right, +y is up). Returns a positive value if ABC is counter-clockwise,
+// negative if clockwise, and zero if the points are collinear.
+template <typename PointT>
+inline double cross(const PointT& a, const PointT& b, const PointT& c) {
+    return (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0]);
+}
+
+} // namespace d3_polygon
+
+#endif // D3__POLYGON__CROSS_HPP
